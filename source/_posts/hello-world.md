@@ -35,4 +35,10 @@ More info: [Generating](https://hexo.io/docs/generating.html)
 $ hexo deploy
 ```
 
+### hexo s正常，hexo d不能推远程
+1. hexo clean
+2. hexo g
+3. hexo s
+4. hexo d
+
 More info: [Deployment](https://hexo.io/docs/deployment.html)
