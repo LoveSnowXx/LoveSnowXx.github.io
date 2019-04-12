@@ -1,8 +1,8 @@
 # Header
 menu:
-  Home: /
+  首页: /
   Archives: /archives
-rss: /atom.xml
+  rss: /atom.xml
 
 # Content
 excerpt_link: Read More
