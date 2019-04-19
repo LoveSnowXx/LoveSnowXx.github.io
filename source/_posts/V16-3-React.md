@@ -1,7 +1,7 @@
 ---
 title: V16.3 React
 date: 2019-04-01 09:06:34
-tags: 前端 | React
+tags: [前端, React]
 ---
 ### React V16.3
 
