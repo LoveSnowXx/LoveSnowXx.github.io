@@ -16,6 +16,6 @@ keywords:
 
 [You-Dont-Need-jQuery](https://github.com/nefe/You-Dont-Need-jQuery/blob/master/README.zh-CN.md)
 
-[JavaScript 30](https://www.youtube.com/watch?v=VuN8qwZoego&list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH)
+[JavaScript 30](https://courses.wesbos.com/account/access/59c89fbd7b1edc674255a5e6)
 
 [前端工作面试问题](https://h5bp.org/Front-end-Developer-Interview-Questions/translations/chinese/)
