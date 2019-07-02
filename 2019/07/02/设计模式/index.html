@@ -17,7 +17,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>蜜芽小程序沉思录 | LoveSnow</title>
+	<title>设计模式 | LoveSnow</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -45,14 +45,14 @@
 
 	<meta property="og:site_name" content="LoveSnow">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="蜜芽小程序沉思录 | LoveSnow">
+	<meta property="og:title" content="设计模式 | LoveSnow">
 	<meta property="og:description" content>
-	<meta property="og:url" content="http://yoursite.com/2019/05/17/蜜芽小程序沉思录/">
+	<meta property="og:url" content="http://yoursite.com/2019/07/02/设计模式/">
 
 	
-	<meta property="article:published_time" content="2019-05-17T11:05:00+08:00"> 
+	<meta property="article:published_time" content="2019-07-02T17:07:00+08:00"> 
 	<meta property="article:author" content="LoveSnow">
-	<meta property="article:published_first" content="LoveSnow, /2019/05/17/蜜芽小程序沉思录/">
+	<meta property="article:published_first" content="LoveSnow, /2019/07/02/设计模式/">
 	
 </head>
 <body class="post-template">
@@ -123,23 +123,81 @@
     <div class="inner">
         <header class="post-full-header">
             <section class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2019-05-17T03:39:31.000Z" itemprop="datePublished">
-                    2019-05-17
+                <time class="post-full-meta-date" datetime="2019-07-02T09:17:27.000Z" itemprop="datePublished">
+                    2019-07-2
                 </time>
                 
                 <span class="date-divider">/</span>
                 
                 
             </section>
-            <h1 class="post-full-title">蜜芽小程序沉思录</h1>
+            <h1 class="post-full-title">设计模式</h1>
         </header>
         <article class="post-full no-image">
             
             <section class="post-full-content">
                 <div id="lightgallery" class="markdown-body">
-                    <h4 id="开发周期大于测试周期"><a href="#开发周期大于测试周期" class="headerlink" title="开发周期大于测试周期"></a>开发周期大于测试周期</h4><p>开发时明确边界及修复潜在bug，避免将bug遗留到测试上线阶段。</p>
-<h4 id="一切以开发文档为主"><a href="#一切以开发文档为主" class="headerlink" title="一切以开发文档为主"></a>一切以开发文档为主</h4><p>不接受开发叮叮沟通接口变更。一切以开发文档为主。规定成功和失败的code。</p>
-<h4 id="明确测试和上线时间"><a href="#明确测试和上线时间" class="headerlink" title="明确测试和上线时间"></a>明确测试和上线时间</h4><p>设置测试和上线的deadline。</p>
+                    <h4 id="设计模式六大原则"><a href="#设计模式六大原则" class="headerlink" title="设计模式六大原则"></a>设计模式六大原则</h4><ol>
+<li>单一原则</li>
+<li>对扩展开放对修改关闭</li>
+<li>组合大于继承</li>
+<li>接口隔离原则</li>
+<li>依赖倒置原则</li>
+<li>高内聚低耦合</li>
+</ol>
+<h4 id="设计模式主要分类"><a href="#设计模式主要分类" class="headerlink" title="设计模式主要分类"></a>设计模式主要分类</h4><ol>
+<li><p>创建型</p>
+<ul>
+<li><p>工厂模式（解决批量生产的问题）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function factor(type) &#123;</span><br><span class="line">    let _str = `this is $&#123;type&#125; App.`</span><br><span class="line">    return _str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>建造者模式(关心建造过程)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">    el: &apos;&apos;,</span><br><span class="line">    data: &apos;&apos;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>原型模式</p>
+</li>
+<li>单例模式(全局有且只有一个)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">functon Person() &#123;</span><br><span class="line">    if (window.p == this) &#123;</span><br><span class="line">        return this;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        return new Person()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let p =new Person();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>结构型</p>
+<ul>
+<li>外观（把多个接口统一成一个接口调用）</li>
+<li><p>适配器（做一个转接口，转换数据格式）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A.xx();</span><br><span class="line">function adapt() &#123;</span><br><span class="line">    window.A = B;</span><br><span class="line">    A.xx = B.xx;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>装饰者</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var _fn = A.xx;</span><br><span class="line">A.xx = function() &#123;</span><br><span class="line">    _fn.call(A);</span><br><span class="line">    // 加入扩展功能</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>享元模式（提取公共部分）</p>
+</li>
+<li>桥接模式</li>
+</ul>
+</li>
+<li><p>行为型</p>
+<ul>
+<li><p>观察者、订阅发布模式(解决两个无法沟通的模块可以沟通)</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function obs() &#123;</span><br><span class="line">    this.callback = &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line">obs.prototype.on = function(type, fn) &#123;</span><br><span class="line">    this.callback[type] = fn;</span><br><span class="line">&#125;</span><br><span class="line">obs.prototype.emit = function(type) &#123;</span><br><span class="line">    this.callback[type]();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var ob = new obs();</span><br><span class="line">ob.on(&apos;test&apos;, function() &#123;</span><br><span class="line">    console.log(&apos;i am a test&apos;);</span><br><span class="line">&#125;)</span><br><span class="line">ob.emit(&apos;test);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>状态/策略模式（解决if else过多的问题）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">function deal(type) &#123;</span><br><span class="line">    if (type == 1) &#123;</span><br><span class="line"></span><br><span class="line">    &#125; else if() &#123;</span><br><span class="line"></span><br><span class="line">    &#125; else &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function deal(type) &#123;</span><br><span class="line">    var cator = &#123;</span><br><span class="line">        type1: function() &#123;</span><br><span class="line"></span><br><span class="line">        &#125;,</span><br><span class="line">        type2: function() &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">    cator[type]();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>命令模式(具体的操作和实现节耦，对复杂操作进行节耦)</p>
+</li>
+<li>指责链模式（把程序分成一个一个模块，让根据指责链接调用）</li>
+<li>迭代器模式</li>
+<li>访问者模式</li>
+</ul>
+</li>
+<li>技巧型<ul>
+<li>链接模式</li>
+<li>委托模式</li>
+<li>节流模式</li>
+<li>惰性模式</li>
+<li>等待者模式</li>
+</ul>
+</li>
+</ol>
 
                 </div>
             </section>
@@ -150,14 +208,14 @@
     <div style="height: 4vw;width: 100%"></div>
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="低风险创业" href="/2019/06/21/低风险创业/">
-            ← 低风险创业
+        <a class="prev-post" title="设计模式实例" href="/2019/07/02/设计模式实例/">
+            ← 设计模式实例
         </a>
         
         <span class="prev-next-post">•</span>
         
-        <a class="next-post" title="github project list" href="/2019/04/29/github-project-list/">
-            github project list →
+        <a class="next-post" title="微信小程序生成海报" href="/2019/06/21/微信小程序生成海报/">
+            微信小程序生成海报 →
         </a>
         
     </nav>
@@ -179,7 +237,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#开发周期大于测试周期"><span class="toc-text">开发周期大于测试周期</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#一切以开发文档为主"><span class="toc-text">一切以开发文档为主</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#明确测试和上线时间"><span class="toc-text">明确测试和上线时间</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#设计模式六大原则"><span class="toc-text">设计模式六大原则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#设计模式主要分类"><span class="toc-text">设计模式主要分类</span></a></li></ol>
     </div>
 </div>
 
@@ -345,7 +403,7 @@
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">蜜芽小程序沉思录</div>
+    <div class="floating-header-title">设计模式</div>
     <progress class="progress" value="0">
         <div class="progress-container">
             <span class="progress-bar"></span>
