@@ -17,7 +17,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>微信小程序生成海报 | LoveSnow</title>
+	<title>设计模式实例2 | LoveSnow</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -45,14 +45,14 @@
 
 	<meta property="og:site_name" content="LoveSnow">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="微信小程序生成海报 | LoveSnow">
+	<meta property="og:title" content="设计模式实例2 | LoveSnow">
 	<meta property="og:description" content>
-	<meta property="og:url" content="http://yoursite.com/2019/06/21/微信小程序生成海报/">
+	<meta property="og:url" content="http://yoursite.com/2019/07/02/设计模式实例2/">
 
 	
-	<meta property="article:published_time" content="2019-06-21T13:06:00+08:00"> 
+	<meta property="article:published_time" content="2019-07-02T18:07:00+08:00"> 
 	<meta property="article:author" content="LoveSnow">
-	<meta property="article:published_first" content="LoveSnow, /2019/06/21/微信小程序生成海报/">
+	<meta property="article:published_first" content="LoveSnow, /2019/07/02/设计模式实例2/">
 	
 </head>
 <body class="post-template">
@@ -123,26 +123,40 @@
     <div class="inner">
         <header class="post-full-header">
             <section class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2019-06-21T05:50:43.000Z" itemprop="datePublished">
-                    2019-06-21
+                <time class="post-full-meta-date" datetime="2019-07-02T10:28:57.000Z" itemprop="datePublished">
+                    2019-07-2
                 </time>
                 
                 <span class="date-divider">/</span>
                 
                 
             </section>
-            <h1 class="post-full-title">微信小程序生成海报</h1>
+            <h1 class="post-full-title">设计模式实例2</h1>
         </header>
         <article class="post-full no-image">
             
             <section class="post-full-content">
                 <div id="lightgallery" class="markdown-body">
-                    <p>最近接到一个需求，小程序生成海报图片，然后分享。偶然发现天猫现在分享也用了这个。</p>
-<p>感觉技术还是很厉害，他规避了朋友圈不能分享的问题，大家可以在朋友圈分享图片，增大产品的触达用户。</p>
-<p>网上给了一些案例，大多使用canvas实现的。有几个不错的库，<a href="https://github.com/niklasvh/html2canvas" target="_blank" rel="noopener">html2canvas</a>和<a href="https://github.com/tsayen/dom-to-image" target="_blank" rel="noopener">dom-to-image</a>。这两者需要操作dom的一些API，但由于微信小程序不能使用dom API。当时的想法是，wxml和html之间可以建一座桥梁，让wxml可以使用html的一些API。只是没有细心验证了。</p>
-<p>然后决定自己画，可由于之前接触canvas太少了，画起来很吃力。然后有去找其他的解决方案。这时候遇到了<a href="https://github.com/Kujiale-Mobile/Painter" target="_blank" rel="noopener">Painter</a>,目前采用这种方案解决的。</p>
-<p>Painter也是通过canvas绘图解决的。它用起来就比较解决css了，通过指定的规则，写一些json数据，然后通过模版去解析。不支持z-index层级，目前没有满足我需求的一个地方。</p>
-<p>canvas绘图的两个问题。绘图较慢，绘图模糊失真的问题。提出一个大胆假设，是否可以绘制矢量图。</p>
+                    <h4 id="工厂模式"><a href="#工厂模式" class="headerlink" title="工厂模式"></a>工厂模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="建造者模式"><a href="#建造者模式" class="headerlink" title="建造者模式"></a>建造者模式</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">#### 原型模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 单例模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 外观模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 适配器模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 装饰者模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 享元模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 桥接模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 订阅发布模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 状态策略模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#### 命令模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 职责链模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 迭代器模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 访问者模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 链接模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 委托模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 节流模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 惰性模式</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">#### 等待者模式</span><br></pre></td></tr></table></figure>
+<p><code>`</code></p>
 
                 </div>
             </section>
@@ -153,14 +167,14 @@
     <div style="height: 4vw;width: 100%"></div>
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="设计模式" href="/2019/07/02/设计模式/">
-            ← 设计模式
+        <a class="prev-post" title="node学习教程" href="/2019/07/04/node学习教程/">
+            ← node学习教程
         </a>
         
         <span class="prev-next-post">•</span>
         
-        <a class="next-post" title="低风险创业" href="/2019/06/21/低风险创业/">
-            低风险创业 →
+        <a class="next-post" title="设计模式实例" href="/2019/07/02/设计模式实例/">
+            设计模式实例 →
         </a>
         
     </nav>
@@ -182,7 +196,7 @@
         </a>
     </div>
     <div class="toc-main">
-        
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#工厂模式"><span class="toc-text">工厂模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#建造者模式"><span class="toc-text">建造者模式</span></a></li></ol>
     </div>
 </div>
 
@@ -354,7 +368,7 @@
         </a>
     </div>
     <span class="floating-header-divider">&mdash;</span>
-    <div class="floating-header-title">微信小程序生成海报</div>
+    <div class="floating-header-title">设计模式实例2</div>
     <progress class="progress" value="0">
         <div class="progress-container">
             <span class="progress-bar"></span>
