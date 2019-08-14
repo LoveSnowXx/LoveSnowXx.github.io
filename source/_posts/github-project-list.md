@@ -1,7 +1,7 @@
 ---
 title: github project list
 date: 2019-04-29 11:00:07
-tags:
+tags: [github资源]
 cover_img:
 feature_img:
 description:
@@ -23,3 +23,5 @@ keywords:
 [Node.js 最佳实践](https://github.com/i0natan/nodebestpractices/blob/master/README.chinese.md)
 
 [Python - 100天从新手到大师](https://github.com/jackfrued/Python-100-Days)
+
+[clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript)
