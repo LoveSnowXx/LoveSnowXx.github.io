@@ -17,7 +17,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Tag: node | LoveSnow</title>
+	<title>滚动加载 | LoveSnow</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -26,7 +26,7 @@
 	<meta name="description" content>
 
 	
-	<meta name="keywords" content="hexo, casper, ghost, theme">
+	<meta name="keywords" content>
 	
 
 	
@@ -44,24 +44,26 @@
 	
 
 	<meta property="og:site_name" content="LoveSnow">
-	<meta property="og:type" content="blog">
-	<meta property="og:title" content="Tag: node | LoveSnow">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="滚动加载 | LoveSnow">
 	<meta property="og:description" content>
-	<meta property="og:url" content="http://yoursite.com/tags/node/index.html">
+	<meta property="og:url" content="http://yoursite.com/2019/10/17/滚动加载/">
 
 	
+	<meta property="article:published_time" content="2019-10-17T14:10:00+08:00"> 
+	<meta property="article:author" content="LoveSnow">
+	<meta property="article:published_first" content="LoveSnow, /2019/10/17/滚动加载/">
+	
 </head>
-<body class="tag-template">
+<body class="post-template">
 	<div class="site-wrapper">
-		 
+		
 
 
 
 
-<header class="site-header outer " style="background-image: url(https://i.loli.net/2017/11/26/5a19c56faa29f.jpg)">
+<header class="site-header outer" style="z-index: 999">
     <div class="inner">
-        
-        
         
 <nav class="site-nav"> 
     <div class="site-nav-left">
@@ -113,82 +115,68 @@
 </div>
     </div>
 </nav>
-        
-        <div class="site-header-content">
-            
-            <h1 class="site-title">
-                Tag: node
-            </h1>
-            <h2 class="site-description">Tags</h2>
-        </div>
-        
-        
     </div>
 </header>
 
 
 <main id="site-main" class="site-main outer" role="main">
-	<div class="inner">
-		<div class="post-feed">
-			
-			<article class="post-card post  no-image ">
-				
-				<div class="post-card-content">
-					<a class="post-card-content-link" title="node学习教程" href="/2019/07/04/node学习教程/">
-						<header class="post-card-header">
-							<span class="post-card-tags">
-								
-								| 
-								
-								<time datetime="2019-07-04T09:54:46.000Z" itemprop="datePublished">
-									2019-07-04
-								</time>
-							</span>
-							<h2 class="post-card-title">node学习教程</h2>
-						</header>
-						<section class="post-card-excerpt">
-							<p>
-								
-								
-								
-								
-								
-								node-lessons
+    <div class="inner">
+        <header class="post-full-header">
+            <section class="post-full-meta">
+                <time class="post-full-meta-date" datetime="2019-10-17T06:11:39.000Z" itemprop="datePublished">
+                    2019-10-17
+                </time>
+                
+                <span class="date-divider">/</span>
+                
+                
+            </section>
+            <h1 class="post-full-title">滚动加载</h1>
+        </header>
+        <article class="post-full no-image">
+            
+            <section class="post-full-content">
+                <div id="lightgallery" class="markdown-body">
+                    <h4 id="滚动加载"><a href="#滚动加载" class="headerlink" title="滚动加载"></a>滚动加载</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> innerHeight = <span class="built_in">document</span>.documentElement.scrollHeight;</span><br><span class="line">    <span class="keyword">const</span> outerHeight = <span class="built_in">document</span>.documentElement.clientHeight;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">getScroll</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> &#123;</span><br><span class="line">            top: <span class="built_in">window</span>.pageYOffset || <span class="built_in">document</span>.documentElement.scrollTop || <span class="built_in">document</span>.body.scrollTop</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">const</span> scrollTop = getScroll().top;</span><br><span class="line">    <span class="keyword">if</span> (outerHeight + scrollTop &gt;= innerHeight) &#123; <span class="comment">// 该加载数据了</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.flogF) &#123;</span><br><span class="line">        <span class="keyword">this</span>.flogF = <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">this</span>.page += <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">this</span>.fetchGoodsList(<span class="keyword">this</span>.catId, <span class="keyword">this</span>.nav_id);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-								
-							</p>
-						</section>
-					</a>
-					<footer class="post-card-meta">
-						<div class="author-list">
-							<div class="author-list-item">
-								<div class="author-name-tooltip">LoveSnow</div>
-								
-								<a href="/about" class="static-avatar author-profile-image">
-									<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"/></g></svg>
-								</a>
-								
-							</div>
-						</div>
-						<span class="reading-time">
-							0
-							min read
-						</span>
-					</footer>
-				</div>
-			</article>
-			
-		</div>
-	</div>
+                </div>
+            </section>
+        </article>
+    </div>
 
-	
-	
-	<nav class="pagination">
-		
-	</nav>
-	
-	
+    
+    <div style="height: 4vw;width: 100%"></div>
+    <nav id="gobottom" class="pagination">
+        
+        <span class="prev-next-post">•</span>
+        
+        <a class="next-post" title="创业的艺术" href="/2019/09/11/创业的艺术/">
+            创业的艺术 →
+        </a>
+        
+    </nav>
+
+    
 </main>
+
+<div class="toc-bar">
+    <div class="toc-btn-bar">
+        <a href="#site-main" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M793.024 710.272a32 32 0 1 0 45.952-44.544l-310.304-320a32 32 0 0 0-46.4 0.48l-297.696 320a32 32 0 0 0 46.848 43.584l274.752-295.328 286.848 295.808z"/></svg>
+        </a>
+        <div class="toc-btn toc-switch">
+            <svg class="toc-open" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M779.776 480h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M779.776 672h-387.2a32 32 0 0 0 0 64h387.2a32 32 0 0 0 0-64M256 288a32 32 0 1 0 0 64 32 32 0 0 0 0-64M392.576 352h387.2a32 32 0 0 0 0-64h-387.2a32 32 0 0 0 0 64M256 480a32 32 0 1 0 0 64 32 32 0 0 0 0-64M256 672a32 32 0 1 0 0 64 32 32 0 0 0 0-64"/></svg>
+            <svg class="toc-close hide" viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M512 960c-247.039484 0-448-200.960516-448-448S264.960516 64 512 64 960 264.960516 960 512 759.039484 960 512 960zM512 128.287273c-211.584464 0-383.712727 172.128262-383.712727 383.712727 0 211.551781 172.128262 383.712727 383.712727 383.712727 211.551781 0 383.712727-172.159226 383.712727-383.712727C895.712727 300.415536 723.551781 128.287273 512 128.287273z"/><path d="M557.05545 513.376159l138.367639-136.864185c12.576374-12.416396 12.672705-32.671738 0.25631-45.248112s-32.704421-12.672705-45.248112-0.25631l-138.560301 137.024163-136.447897-136.864185c-12.512727-12.512727-32.735385-12.576374-45.248112-0.063647-12.512727 12.480043-12.54369 32.735385-0.063647 45.248112l136.255235 136.671523-137.376804 135.904314c-12.576374 12.447359-12.672705 32.671738-0.25631 45.248112 6.271845 6.335493 14.496116 9.504099 22.751351 9.504099 8.12794 0 16.25588-3.103239 22.496761-9.247789l137.567746-136.064292 138.687596 139.136568c6.240882 6.271845 14.432469 9.407768 22.65674 9.407768 8.191587 0 16.352211-3.135923 22.591372-9.34412 12.512727-12.480043 12.54369-32.704421 0.063647-45.248112L557.05545 513.376159z"/></svg>
+        </div>
+        <a href="#gobottom" class="toc-btn">
+            <svg viewbox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M231.424 346.208a32 32 0 0 0-46.848 43.584l297.696 320a32 32 0 0 0 46.4 0.48l310.304-320a32 32 0 1 0-45.952-44.544l-286.848 295.808-274.752-295.36z"/></svg>
+        </a>
+    </div>
+    <div class="toc-main">
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#滚动加载"><span class="toc-text">滚动加载</span></a></li></ol>
+    </div>
+</div>
+
 
 
 	</div>
@@ -353,9 +341,45 @@
 
 
 
-<script src="/js/mix/home-lazy-local.min.js"></script>
+
+
+<div class="floating-header">
+	<div class="floating-header-logo">
+        <a href="/" title="LoveSnow">
+			
+                <img src="https://i.loli.net/2017/11/26/5a19c0b50432e.png" alt="LoveSnow icon">
+			
+            <span>LoveSnow</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">滚动加载</div>
+    <progress class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
+</div>
+
+
+
+
+
+<script src="/js/mix/post-lazy-local.min.js"></script>
 
 <script>;(function() {var bLazy = new Blazy()})();</script>
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+<link rel="stylesheet" href="/css/lightgallery.min.css">
+<script>
+    lightGallery(document.getElementById('lightgallery'), {
+        selector: '.post-img'
+    });
+</script>
+
 
 
 
